@@ -1,0 +1,57 @@
+.tree-algo-visualizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+   }
+  
+  #tree-algo-visualizer-title {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .tree-algo-visualizer-inputs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #tree-algo-visualizer-custom-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  #tree-algo-visualizer-random-btn,
+  #tree-algo-visualizer-start-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #tree-algo-visualizer-random-btn:hover,
+  #tree-algo-visualizer-start-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  #tree-algo-visualizer-algorithm-select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .algorithm-description {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+  }

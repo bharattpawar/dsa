@@ -1,0 +1,42 @@
+.lca-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #lca-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .lca-messages {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+  }.messages {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+  }
+  
+  .message.active {
+    background-color: #ffcc80; /* Highlight color for the active message */
+    font-weight: bold;
+  }

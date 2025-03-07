@@ -1,0 +1,80 @@
+.btv-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.btv-problem-selector {
+  margin-bottom: 20px;
+}
+
+.btv-problem-selector__label {
+  margin-right: 15px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.btv-nqueens-input__input,
+.btv-sudoku-cell-input {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.btv-nqueens-input__input:focus,
+.btv-sudoku-cell-input:focus {
+  outline: none;
+  
+  border-color: #6e8efb;
+  box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+}
+
+.btv-speed-control {
+  margin: 20px 0;
+}
+
+.btv-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.btv-buttons {
+  margin: 20px 0;
+}
+
+.btv-start-button,
+.btv-stop-button,
+.btv-restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btv-start-button {
+  background-color: #4caf50;
+}
+
+.btv-stop-button {
+  background-color: #f44336;
+}
+
+.btv-restart-button {
+  background-color: #2196f3;
+}
+
+.btv-start-button:hover,
+.btv-stop-button:hover,
+.btv-restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

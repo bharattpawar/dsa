@@ -1,0 +1,47 @@
+.tree-visualization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  svg {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+  }
+  
+  .node circle {
+    fill: steelblue;
+    stroke: #fff;
+    stroke-width: 1.5px;
+  }
+  
+  .node text {
+    font: 12px sans-serif;
+    pointer-events: none;
+  }svg {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  line {
+    stroke-width: 2;
+  }
+  
+  circle {
+    stroke: black;
+    stroke-width: 2;
+  }
+  
+  text {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }

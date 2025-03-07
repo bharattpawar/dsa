@@ -1,0 +1,50 @@
+.avl-rotations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #avl-rotations-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .avl-rotations-messages {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+  }/* AVL_Rotations.css */
+.avl-rotations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #avl-rotations-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .avl-rotations-messages {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .avl-rotations-messages p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }

@@ -1,0 +1,42 @@
+.btv-sudoku-board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px); /* 9 columns, each 40px wide */
+  grid-template-rows: repeat(9, 40px); /* 9 rows, each 40px tall */
+  gap: 1px; /* Gap between cells */
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.btv-sudoku-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btv-sudoku-cell--fixed {
+  background-color: #e0e0e0; /* Background color for fixed cells */
+}
+
+/* Add thicker borders for 3x3 subgrids */
+.btv-sudoku-cell:nth-child(3n) {
+  border-right: 2px solid #333; /* Thicker border for every 3rd cell */
+}
+
+.btv-sudoku-cell:nth-child(9n) {
+  border-right: none; /* Remove border for the last cell in each row */
+}
+
+.btv-sudoku-board .btv-sudoku-cell:nth-child(-n + 9) {
+  border-top: none; /* Remove border for the first row */
+}
+
+.btv-sudoku-board .btv-sudoku-cell:nth-last-child(-n + 9) {
+  border-bottom: none; /* Remove border for the last row */
+}
