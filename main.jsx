@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router"; // Corrected import
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; // Corrected import
 import SortingVisualizer from "./components/SortingVisualizer/SortingVisualizer";
 import SearchingVisualizer from "./components/SearchingVisualizer/SearchingVisualizer";
 import GraphVisualizer from "./components/GraphVisualizer/GraphVisualizer";
