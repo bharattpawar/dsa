@@ -1,0 +1,44 @@
+.contact-us-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-us-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-container p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #2f1fd8;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-5px);
+    color: #69b3a2;
+  }
+  
+  .social-icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .social-link span {
+    font-size: 1.2em;
+  }

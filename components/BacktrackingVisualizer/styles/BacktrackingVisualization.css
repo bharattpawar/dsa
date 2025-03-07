@@ -41,3 +41,20 @@
 .btv-sudoku-board .btv-sudoku-cell:nth-last-child(-n + 9) {
   border-bottom: none; /* Remove border for the last row */
 }
+@media (max-width: 480px) {
+  .btv-buttons {
+    margin: 10px 0; /* Reduce margin */
+  }
+
+  .btv-start-button,
+  .btv-stop-button,
+  .btv-restart-button {
+    padding: 8px 16px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    margin: 0 5px; /* Reduce margin */
+  }
+
+  .btv-speed-control {
+    margin: 10px 0; /* Reduce margin */
+  }
+}

@@ -40,3 +40,27 @@
   color: #007bff;
 }
  
+@media (max-width: 480px) {
+  .btv-nqueens-container {
+    margin-top: 10px; /* Reduce margin */
+  }
+
+  .btv-nqueens-board {
+    gap: 1px; /* Reduce gap */
+  }
+
+  .btv-nqueens-cell {
+    width: 30px; /* Smaller cells */
+    height: 30px;
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .btv-nqueens-message {
+    font-size: 14px; /* Smaller font size */
+    max-width: 90%; /* Adjust width for small screens */
+  }
+
+  .btv-nqueens-message h3 {
+    font-size: 16px; /* Smaller heading size */
+  }
+}

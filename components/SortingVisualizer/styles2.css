@@ -270,3 +270,108 @@ button:hover {
 .array-bar.sorted {
   background-color: #4caf50; /* Green for sorted bars */
 }
+/* Extra Small Phone Responsiveness (max-width: 480px) */
+@media (max-width: 480px) {
+  /* General Adjustments */
+  body {
+    padding: 10px;
+  }
+
+  .sorting-visualizer {
+    padding: 10px;
+  }
+
+  /* Controls */
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .controls button,
+  .controls input,
+  .controls select {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .manual-array-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Array Container */
+  .array-container {
+    height: 200px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .array-bar {
+    width: 15px; /* Narrower bars for small screens */
+  }
+
+  .array-bar::after {
+    font-size: 10px; /* Smaller font size for bar values */
+    bottom: -15px; /* Adjust position for smaller screens */
+  }
+
+  /* Calculations */
+  .calculations {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .calculations h3 {
+    font-size: 16px;
+  }
+
+  .calculations p {
+    font-size: 12px;
+  }
+
+  /* Race Progress Container */
+  .race-progress {
+    padding: 10px;
+  }
+
+  .algorithm-progress {
+    padding: 15px;
+  }
+
+  .algorithm-progress h3 {
+    font-size: 16px;
+  }
+
+  /* Leaderboard */
+  .leaderboard {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .leaderboard h3 {
+    font-size: 16px;
+  }
+
+  .leaderboard-entry {
+    font-size: 12px;
+  }
+
+  /* Buttons */
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-right: 0.5rem;
+  }
+
+  /* Progress Bar */
+  .progress-bar {
+    height: 8px;
+  }
+
+  .progress-bar::after {
+    font-size: 10px;
+  }
+}

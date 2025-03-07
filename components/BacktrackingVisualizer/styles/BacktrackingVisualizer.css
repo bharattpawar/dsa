@@ -78,3 +78,24 @@
   transform: translateY(-2px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 480px) {
+  .btv-container {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .btv-problem-selector {
+    margin-bottom: 10px; /* Reduce margin */
+  }
+
+  .btv-problem-selector__label {
+    font-size: 14px; /* Smaller font size */
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  .btv-nqueens-input__input,
+  .btv-sudoku-cell-input {
+    width: 50px; /* Smaller input width */
+    height: 35px; /* Smaller input height */
+    font-size: 14px; /* Smaller font size */
+  }
+}

@@ -1,20 +1,20 @@
+/* 1--.activity-selection */
 .activity-selection {
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     color: black;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
 
 .activities, .selected-activities {
-    margin-top: 20px;
+    margin-top: 10px;
     color: black;
-
 }
 
 .activity {
-    padding: 10px;    color: black;
-
+    padding: 8px;
+    color: black;
     background-color: #e0e0e0;
     border-radius: 4px;
     margin: 5px 0;
@@ -30,7 +30,7 @@
 }
 
 .explanation {
-    margin-top: 20px;
+    margin-top: 10px;
     font-style: italic;
     color: #555;
 }
@@ -38,4 +38,24 @@
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+    .activity-selection {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .activities, .selected-activities {
+        margin-top: 5px;
+    }
+
+    .activity {
+        padding: 5px;
+    }
+
+    .explanation {
+        margin-top: 5px;
+        font-size: 14px;
+    }
 }

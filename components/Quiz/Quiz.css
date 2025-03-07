@@ -1,0 +1,56 @@
+.quiz-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .data-structure-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .ds-card {
+    padding: 20px;
+    background-color: #69b3a2;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .ds-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .quiz-questions-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .options button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #69b3a2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .quiz-result-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .review-section {
+    margin-top: 20px;
+  }
+  
+  .question-review {
+     padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
