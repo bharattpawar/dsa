@@ -1,0 +1,43 @@
+/* Get Started Page Styles */
+.get-started {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .get-started h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .get-started .content {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .get-started p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+  }
+  
+  .visualize-now-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6f61, #ff4a3d);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .visualize-now-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #ff4a3d, #ff6f61);
+  }

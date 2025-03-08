@@ -3,53 +3,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
   
-body {
+  body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgba(35, 39, 47, 255); /* Dark background for the entire page */
-    color: rgb(255, 255, 255); /* Default text color */
+    background-color: rgba(35, 39, 47, 255);
+    color: rgb(255, 255, 255);
     line-height: 1.6;
-    padding-top: 60px; /* Padding to account for fixed navbar */
-    overflow-x: hidden; /* Remove horizontal scroll */
-}
+    padding-top: 60px;
+    overflow-x: hidden;
+  }
   
-/* Container Styles */
-.dsa-container {
+  /* Container Styles */
+  .dsa-container {
     padding: 20px;
     text-align: center;
-}
+  }
   
-/* Hero Section */
-.dsa-hero {
+  /* Hero Section */
+  .dsa-hero {
     color: white;
     padding: 100px 20px;
     text-align: center;
-    background: linear-gradient(135deg, rgba(35, 39, 47, 0.9), rgba(35, 39, 47, 0.7)); /* Gradient overlay */
+    background: linear-gradient(135deg, rgba(35, 39, 47, 0.9), rgba(35, 39, 47, 0.7));
     background-size: cover;
     background-position: center;
-}
+  }
   
-.dsa-hero-content {
+  .dsa-hero-content {
     max-width: 800px;
     margin: 0 auto;
-}
+  }
   
-.dsa-hero h1 {
+  .dsa-hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
+    word-wrap: break-word;
+  }
   
-.dsa-hero p {
+  .dsa-hero p {
     font-size: 1.2em;
     margin-bottom: 15px;
     opacity: 0.9;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
+    word-wrap: break-word;
+  }
   
-.dsa-hero-button {
+  .dsa-hero-button {
     background-color: #ff6f61;
     color: white;
     padding: 12px 24px;
@@ -59,532 +59,89 @@ body {
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     display: inline-block;
-    margin: 5px 0; /* Add margin to ensure buttons stack vertically if needed */
-}
+    margin: 5px 0;
+  }
   
-.dsa-hero-button:hover {
+  .dsa-hero-button:hover {
     background-color: #ff4a3d;
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
+  }
   
-/* Navbar Styles */
-.dsa-navbar {
-    background-color: rgba(35, 39, 47, 0.9); /* Semi-transparent background */
-    color: white;
-    padding: 10px 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-  
-.dsa-navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-.dsa-navbar-brand {
-    font-size: 1.5em;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-  
-.dsa-navbar-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    position: relative;
-    z-index: 1000;
-}
-  
-.dsa-hamburger {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-  
-.dsa-hamburger::before,
-.dsa-hamburger::after {
-    content: '';
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease, top 0.3s ease;
-}
-  
-.dsa-hamburger::before {
-    top: -8px;
-}
-  
-.dsa-hamburger::after {
-    top: 8px;
-}
-  
-/* Prevent hamburger from turning blue on hover */
-.dsa-hamburger:hover {
-    background-color: white; /* Maintain the original color */
-}
-  
-/* Transform hamburger into X */
-.dsa-navbar-toggle.dsa-active .dsa-hamburger {
-    transform: rotate(45deg);
-}
-  
-.dsa-navbar-toggle.dsa-active .dsa-hamburger::before {
-    transform: rotate(90deg);
-    top: 0;
-}
-  
-.dsa-navbar-toggle.dsa-active .dsa-hamburger::after {
-    transform: rotate(90deg);
-    top: 0;
-}
-  
-.dsa-navbar-links {
+  .dsa-hero-buttons {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure links wrap to the next line if needed */
-}
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
   
-.dsa-nav-link {
-    color: white;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-    position: relative;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.dsa-nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-  
-/* Visualize Dropdown Styles */
-.dsa-visualize-container {
-    position: relative;
-    cursor: pointer;
-}
-  
-.dsa-visualize-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 8px;
-    background-color: rgba(35, 39, 47, 0.9); /* Semi-transparent background */
-    border-radius: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    min-width: 200px;
-    padding: 10px 0;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-}
-  
-.dsa-visualize-dropdown.dsa-active {
-    display: block;
-}
-  
-.dsa-visualize-dropdown .dsa-nav-link {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.2s;
-    position: relative;
-    right: 10px;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.dsa-visualize-dropdown .dsa-nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateX(5px);
-}
-  
-/* Cool Visualize Button */
-#dsa-visualize {
-    background: linear-gradient(135deg, #ff6f61, #ff4a3d);
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: inline-block;
-    margin: 5px 0; /* Add margin to ensure buttons stack vertically if needed */
-}
-  
-#dsa-visualize:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-  
-/* Footer Styles */
-.dsa-footer {
-    background-color: rgba(35, 39, 47, 0.9); /* Semi-transparent background */
+  /* Footer Styles */
+  .dsa-footer {
+    background-color: rgba(35, 39, 47, 0.9);
     color: white;
     padding: 40px 20px;
     text-align: center;
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
+    word-wrap: break-word;
+  }
   
-.dsa-footer-content {
+  .dsa-footer-content {
     max-width: 1200px;
     margin: 0 auto;
-}
+  }
   
-.dsa-footer-links {
+  .dsa-footer-links {
     display: flex;
     justify-content: center;
     gap: 10px;
-    flex-wrap: wrap; /* Ensure links wrap to the next line if needed */
+    flex-wrap: wrap;
     padding: 10px;
-}
+  }
   
-.dsa-footer-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 10px 20px;
-    border-radius: 20px;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
-    display: inline-block;
-    white-space: nowrap;
-    margin: 5px 0; /* Add margin to ensure buttons stack vertically if needed */
-}
-  
-.dsa-footer-links a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #2575fc, #6a11cb);
-}
-  
-.dsa-footer-content p {
+  .dsa-footer-content p {
     margin-top: 20px;
     opacity: 0.8;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
+    word-wrap: break-word;
+  }
   
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .dsa-navbar-toggle {
-        display: block;
-    }
-  
-    .dsa-navbar-links {
-        position: fixed;
-        top: 60px;
-        right: -100%;
-        height: calc(100vh - 60px);
-        width: 250px;
-        background-color: rgb(35, 39, 47);
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 20px;
-        transition: right 0.3s ease;
-        z-index: 999;
-        backdrop-filter: blur(10px);
-    }
-  
-    .dsa-navbar-links.dsa-active {
-        right: 0;
-    }
-  
-    .dsa-nav-link {
-        width: 100%;
-        text-align: left;
-        padding: 15px 20px;
-    }
-  
-    .dsa-visualize-dropdown {
-        position: static;
-        background-color: transparent;
-        box-shadow: none;
-    }
-  
-    .dsa-visualize-dropdown .dsa-nav-link {
-        padding-left: 40px;
-    }
-}
-  
-@media (max-width: 480px) {
+  /* Responsive Styles */
+  @media (max-width: 480px) {
     .dsa-hero h1 {
-        font-size: 2.5em;
+      font-size: 2.5em;
     }
   
     .dsa-hero p {
-        font-size: 1em;
+      font-size: 1em;
     }
   
     .dsa-hero {
-        padding: 60px 10px;
+      padding: 60px 10px;
     }
   
     .dsa-footer-links a {
-        font-size: 0.9em;
-        padding: 8px 16px;
+      font-size: 0.9em;
+      padding: 8px 16px;
     }
-}
+  }
   
-/* Responsive Styles for 300px width */
-@media (max-width: 300px) {
+  @media (max-width: 300px) {
     .dsa-hero h1 {
-        font-size: 2em;
+      font-size: 2em;
     }
   
     .dsa-hero p {
-        font-size: 0.9em;
+      font-size: 0.9em;
     }
   
     .dsa-hero-button, .dsa-youtube-link {
-        padding: 8px 16px;
-        font-size: 0.8em;
+      padding: 8px 16px;
+      font-size: 0.8em;
     }
   
     .dsa-footer-links a {
-        font-size: 0.8em;
-        padding: 6px 12px;
+      font-size: 0.8em;
+      padding: 6px 12px;
     }
-  
-    .dsa-navbar-brand {
-        font-size: 1.2em;
-    }
-  
-    .dsa-nav-link {
-        padding: 10px 15px;
-        font-size: 0.9em;
-    }
-  
-    .dsa-hamburger,
-    .dsa-hamburger::before,
-    .dsa-hamburger::after {
-        width: 20px;
-        height: 2px;
-    }
-}
-  
-/* Learn DSA Page Styles */
-.dsa-learn-dsa {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: white;
-}
-  
-.dsa-learn-dsa h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-  
-.dsa-learn-dsa h2 {
-    font-size: 1.8em;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-  
-.dsa-learn-dsa p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-  
-.dsa-learn-dsa ul {
-    list-style-type: disc;
-    padding-left: 40px;
-    margin-bottom: 20px;
-}
-  
-.dsa-learn-dsa ul li {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-  
-.dsa-youtube-link {
-    display: inline-block;
-    background-color: #ff6f61;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-}
-  
-.dsa-youtube-link:hover {
-    background-color: #ff4a3d;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-}
-  
-/* Hero Buttons */
-.dsa-hero-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-    flex-wrap: wrap; /* Ensure buttons wrap to the next line if needed */
-}
-  
-/* Debugging Challenge Styles */
-.debugging-challenge-container {
-    padding: 20px;
-    text-align: center;
-}
-  
-.challenge-description {
-    margin-bottom: 20px;
-}
-  
-.code-snippet {
-    background-color: #f5f5f5;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    text-align: left;
-    overflow-x: auto; /* Allow horizontal scroll for code snippets */
-}
-  
-.user-solution textarea {
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: monospace;
-    margin-bottom: 20px;
-}
-  
-.actions {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap; /* Ensure buttons wrap to the next line if needed */
-    margin-bottom: 20px;
-}
-  
-.actions button {
-    padding: 10px 20px;
-    background-color: #69b3a2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin: 5px 0; /* Add margin to ensure buttons stack vertically if needed */
-}
-  
-.actions button:hover {
-    background-color: #4a8c7a;
-}
-  
-.result {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.result.correct {
-    background-color: #d4edda;
-    color: #155724;
-}
-  
-.result.incorrect {
-    background-color: #f8d7da;
-    color: #721c24;
-}
-  
-.hint-container {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    border-left: 4px solid #69b3a2;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.hint-container h3 {
-    margin-bottom: 10px;
-}
-  
-.hint-container button {
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: #69b3a2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-  
-.hint-container button:hover {
-    background-color: #4a8c7a;
-}
-  
-/* Contact Us Styles */
-.contact-us-container {
-    padding: 20px;
-    text-align: center;
-}
-  
-.contact-us-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.contact-us-container p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    word-wrap: break-word; /* Ensure long words break to the next line */
-}
-  
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap; /* Ensure links wrap to the next line if needed */
-}
-  
-.social-link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    transition: transform 0.3s, color 0.3s;
-}
-  
-.social-link:hover {
-    transform: translateY(-5px);
-    color: #69b3a2;
-}
-  
-.social-icon {
-    font-size: 3em;
-}
+  }

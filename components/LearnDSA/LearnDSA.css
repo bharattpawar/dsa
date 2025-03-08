@@ -1,0 +1,94 @@
+/* General styling for the LearnDSA component */
+.dsa-learn-dsa {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.dsa-learn-dsa h1 {
+    font-size: 2rem; /* Smaller font size for small screens */
+    color: #dfedfa;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dsa-learn-dsa h2 {
+    font-size: 1.75rem; /* Smaller font size for small screens */
+    color: #dfedfa;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* Paragraph styles */
+.dsa-learn-dsa p {
+    font-size: 1rem; /* Smaller font size for small screens */
+    margin-bottom: 15px;
+}
+
+/* List styles */
+.dsa-learn-dsa ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Reduced margin for small screens */
+    margin-bottom: 15px;
+}
+
+.dsa-learn-dsa ul li {
+    font-size: 0.95rem; /* Smaller font size for small screens */
+    margin-bottom: 8px;
+}
+
+/* Link styles */
+.dsa-youtube-link {
+    display: inline-block;
+    padding: 8px 16px; /* Smaller padding for small screens */
+    font-size: 1rem; /* Smaller font size for small screens */
+    color: #fff;
+    background-color: #e74c3c;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dsa-youtube-link:hover {
+    background-color: #c0392b;
+}
+
+/* Responsive design for very small screens (e.g., 320px) */
+@media (max-width: 480px) {
+    .dsa-learn-dsa {
+        padding: 10px; /* Reduced padding for very small screens */
+    }
+
+    .dsa-learn-dsa h1 {
+        font-size: 1.75rem; /* Even smaller font size */
+    }
+
+    .dsa-learn-dsa h2 {
+        font-size: 1.5rem; /* Even smaller font size */
+    }
+
+    .dsa-learn-dsa p {
+        font-size: 0.95rem; /* Even smaller font size */
+    }
+
+    .dsa-learn-dsa ul {
+        margin-left: 15px; /* Further reduced margin */
+    }
+
+    .dsa-learn-dsa ul li {
+        font-size: 0.9rem; /* Even smaller font size */
+    }
+
+    .dsa-youtube-link {
+        font-size: 0.95rem; /* Even smaller font size */
+        padding: 6px 12px; /* Smaller padding */
+    }
+}

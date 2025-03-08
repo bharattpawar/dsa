@@ -10,12 +10,14 @@ body {
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
-}
+ }
 .speed{
   color: black;
 }
 .sorting-visualizer {
   display: flex;
+  margin-top: 50px;
+
   flex-direction: column;
   align-items: center;
   width: 100%;

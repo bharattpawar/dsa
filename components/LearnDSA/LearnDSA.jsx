@@ -1,4 +1,5 @@
 import React from "react";
+import "./LearnDSA.css"; // Import the CSS file
 
 const LearnDSA = () => {
     return (

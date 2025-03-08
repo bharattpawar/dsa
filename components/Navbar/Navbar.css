@@ -1,0 +1,217 @@
+/* Navbar Styles */
+.dsa-navbar {
+    background-color: rgba(35, 39, 47, 0.9);
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dsa-navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dsa-navbar-brand {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .dsa-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .dsa-hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .dsa-hamburger::before,
+  .dsa-hamburger::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease, top 0.3s ease;
+  }
+  
+  .dsa-hamburger::before {
+    top: -8px;
+  }
+  
+  .dsa-hamburger::after {
+    top: 8px;
+  }
+  
+  .dsa-navbar-toggle.dsa-active .dsa-hamburger {
+    transform: rotate(45deg);
+  }
+  
+  .dsa-navbar-toggle.dsa-active .dsa-hamburger::before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  .dsa-navbar-toggle.dsa-active .dsa-hamburger::after {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+  .dsa-navbar-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .dsa-nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  .dsa-nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dsa-visualize-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dsa-visualize-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(35, 39, 47, 0.9);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 200px;
+    padding: 10px 0;
+    backdrop-filter: blur(10px);
+  }
+  
+  .dsa-visualize-dropdown.dsa-active {
+    display: block;
+  }
+  
+  .dsa-visualize-dropdown .dsa-nav-link {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative;
+    right: 10px;
+    word-wrap: break-word;
+  }
+  
+  .dsa-visualize-dropdown .dsa-nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+  }
+  
+  #dsa-visualize {
+    background: linear-gradient(135deg, #ff6f61, #ff4a3d);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    margin: 5px 0;
+  }
+  
+  #dsa-visualize:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .dsa-navbar-toggle {
+      display: block;
+    }
+  
+    .dsa-navbar-links {
+      position: fixed;
+      top: 60px;
+      right: -100%;
+      height: calc(100vh - 60px);
+      width: 250px;
+      background-color: rgb(35, 39, 47);
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 20px;
+      transition: right 0.3s ease;
+      z-index: 999;
+      backdrop-filter: blur(10px);
+    }
+  
+    .dsa-navbar-links.dsa-active {
+      right: 0;
+    }
+  
+    .dsa-nav-link {
+      width: 100%;
+      text-align: left;
+      padding: 15px 20px;
+    }
+  
+    .dsa-visualize-dropdown {
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  
+    .dsa-visualize-dropdown .dsa-nav-link {
+      padding-left: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dsa-navbar-brand {
+      font-size: 1.2em;
+    }
+  
+    .dsa-nav-link {
+      padding: 10px 15px;
+      font-size: 0.9em;
+    }
+  
+    .dsa-hamburger,
+    .dsa-hamburger::before,
+    .dsa-hamburger::after {
+      width: 20px;
+      height: 2px;
+    }
+  }

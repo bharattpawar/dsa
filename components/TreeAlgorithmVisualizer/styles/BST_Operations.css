@@ -5,7 +5,9 @@
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    color: #333;
+    color: #333;
+
     margin-bottom: 20px;
   }
   
@@ -15,7 +17,8 @@
     margin-bottom: 20px;
   }
   
-  .bst-operations-messages {
+  .bst-operations-messages {    color: #333;
+
     margin-top: 20px;
     font-size: 1rem;
     color: #555;
