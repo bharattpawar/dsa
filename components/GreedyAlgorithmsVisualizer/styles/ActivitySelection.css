@@ -59,3 +59,29 @@ button:disabled {
         font-size: 14px;
     }
 }
+
+@media (max-width: 440px) {
+    .activity-selection {
+        margin: 1px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column; /* Ensures elements stack vertically */
+    }
+
+    .activities, .selected-activities {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column; /* Ensures activities stack vertically */
+    }
+
+    .activity {
+        padding: 5px;
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .explanation {
+        margin-top: 5px;
+        font-size: 10px; /* Adjust font size for smaller screens */
+    }
+ 
+}

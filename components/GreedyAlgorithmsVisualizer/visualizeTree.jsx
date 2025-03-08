@@ -1,3 +1,5 @@
+
+
 export const visualizeTree = (tree, svgElement) => {
     const svg = d3.select(svgElement);
     svg.selectAll('*').remove(); // Clear previous visualization
