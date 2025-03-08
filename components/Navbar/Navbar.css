@@ -140,20 +140,16 @@
   }
   
   #dsa-visualize {
-    background: linear-gradient(135deg, #ff6f61, #ff4a3d);
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    
+     transition: transform 0.3s, box-shadow 0.3s;
     display: inline-block;
     margin: 5px 0;
+    margin-right: 50px;
   }
   
   #dsa-visualize:hover {
     transform: translateY(-3px);
+ 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
   }
   
@@ -191,7 +187,7 @@
       position: static;
       background-color: transparent;
       box-shadow: none;
-    }
+     }
   
     .dsa-visualize-dropdown .dsa-nav-link {
       padding-left: 40px;

@@ -28,6 +28,7 @@ const Navbar = () => {
   return (
     <nav className="dsa-navbar">
       <div className="dsa-navbar-container">
+        
         <Link className="dsa-navbar-brand" to="/">
           DSA Visualizer
         </Link>

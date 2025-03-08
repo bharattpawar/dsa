@@ -128,7 +128,7 @@ const VisualizerMode = () => {
           <div
             key={index}
             className={`dsa-array-bar ${index === currentIndex ? 'dsa-array-bar-active' : ''} ${index === foundIndex ? 'dsa-array-bar-found' : ''}`}
-            style={{ height: `${value +100}px` }}
+            style={{ height: `${value}px` }}
             data-value={value}
           ></div>
         ))}

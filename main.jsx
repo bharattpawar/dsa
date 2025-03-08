@@ -16,8 +16,9 @@ import DebuggingChallenge from "./components/DebuggingChallenge/DebuggingChallen
 import ContactUs from "./components/ContactUs/ContactUs";
 import WhatWeOffer from "./components/WhatWeOffer/WhatWeOffer";
 import GetStarted from "./components/GetStarted/GetStarted";
+import Homepages from "./components/Homepages/HomePages";
 import Navbar from "./components/Navbar/Navbar"; // Import Navbar Component
-import "./style.css";
+import "./style.css"; 
 
 // Home Component
 const Home = () => {
@@ -45,12 +46,15 @@ const Footer = () => {
   return (
     <footer className="dsa-footer">
       <div className="dsa-footer-content">
+        {/* Conditionally render the "Homepages" component */}
+        {location.pathname === "/" && <Homepages />}
+        {/* Conditionally render the "What We Offer" button only on the home page */}
         {location.pathname === "/" && (
           <Link to="/what-we-offer" className="dsa-footer-button">
             What We Offer
           </Link>
         )}
-        <p>&copy; 2025 DSA Visualizer. All rights reserved.</p>
+        <p>&copy; 2025 DSA Visualizer. All rights reserved by Bharat Pawar</p>
       </div>
     </footer>
   );
@@ -58,8 +62,10 @@ const Footer = () => {
 
 // App Component
 const App = () => {
+  const location = useLocation();
+
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -80,10 +86,14 @@ const App = () => {
         <Route path="/what-we-offer" element={<WhatWeOffer />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
 // Render the App
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+  <Router>
+    <App />
+  </Router>
+);

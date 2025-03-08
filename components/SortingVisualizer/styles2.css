@@ -1,8 +1,9 @@
 /* General Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   color: #333;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #f5f5f5; /* Light background */
   transition: background-color 0.3s, color 0.3s;
   display: flex;
   justify-content: center;
@@ -10,14 +11,15 @@ body {
   min-height: 100vh;
   width: 100%;
   box-sizing: border-box;
- }
-.speed{
+}
+
+.speed {
   color: black;
 }
+
 .sorting-visualizer {
   display: flex;
   margin-top: 50px;
-
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -40,10 +42,12 @@ body {
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 20px;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.8); /* Glass morphism background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: background-color 0.3s, box-shadow 0.3s;
   justify-content: center;
   width: 90%;
@@ -55,33 +59,36 @@ body {
 .controls select {
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 .controls button {
-  background-color: #61dafb;
+  background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* Gradient background */
+  color: white;
   cursor: pointer;
   font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .controls button:hover {
-  background-color: #4fa3c7;
-  transform: translateY(-2px);
+  background: linear-gradient(135deg, #5a7cfa, #3b5bdb); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 .controls input,
 .controls select {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background: rgba(240, 240, 240, 0.8); /* Light background */
+  border: 1px solid rgba(204, 204, 204, 0.5); /* Subtle border */
 }
 
 .controls input:focus,
 .controls select:focus {
   outline: none;
-  border-color: #61dafb;
-  box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+  border-color: #6e8efb; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(110, 142, 251, 0.3); /* Subtle glow on focus */
 }
 
 .manual-array-input {
@@ -98,9 +105,11 @@ body {
   gap: 5px;
   margin-bottom: 20px;
   padding: 30px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8); /* Glass morphism background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: background-color 0.3s, box-shadow 0.3s;
   height: 340px;
   width: 90%;
@@ -111,7 +120,7 @@ body {
 /* Array Bars */
 .array-bar {
   width: 30px;
-  background-color: #61dafb;
+  background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* Gradient background */
   text-align: center;
   color: white;
   font-weight: bold;
@@ -133,12 +142,12 @@ body {
 
 /* Active and Found States */
 .array-bar.active {
-  background-color: #ff5555;
+  background: linear-gradient(135deg, #ff5555, #ff4a3d); /* Red gradient for active bars */
   transform: scale(1.1);
 }
 
 .array-bar.found {
-  background-color: #4caf50;
+  background: linear-gradient(135deg, #4caf50, #45a049); /* Green gradient for found bars */
   transform: scale(1.1);
 }
 
@@ -146,10 +155,12 @@ body {
 .calculations {
   width: 90%;
   max-width: 800px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.8); /* Glass morphism background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: background-color 0.3s, box-shadow 0.3s;
   margin-top: 20px;
   text-align: left;
@@ -182,10 +193,12 @@ body {
 /* Individual Algorithm Progress Container */
 .algorithm-progress {
   width: 100%;
-  background-color: #aba8a8;
+  background: rgba(255, 255, 255, 0.8); /* Glass morphism background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: background-color 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
@@ -203,14 +216,14 @@ body {
 .progress-bar {
   width: 100%;
   height: 10px;
-  background-color: #f0f0f0;
+  background: rgba(240, 240, 240, 0.8); /* Light background */
   border-radius: 5px;
   overflow: hidden;
 }
 
 .progress {
   height: 100%;
-  background-color: #61dafb;
+  background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* Gradient background */
   transition: width 0.3s ease-in-out;
 }
 
@@ -218,10 +231,11 @@ body {
 .leaderboard {
   width: 90%;
   max-width: 800px;
-  background-color: #f0f0f0;
+  background: rgba(240, 240, 240, 0.8); /* Light background */
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: background-color 0.3s, box-shadow 0.3s;
   margin-top: 20px;
 }
@@ -237,41 +251,13 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 5px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.5); /* Subtle border */
 }
 
 .leaderboard-entry:last-child {
   border-bottom: none;
 }
 
-button {
-  background: linear-gradient(135deg, #6e8efb, #4a6cf7); /* Gradient background */
-  border: none;
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 20px; /* Padding for better spacing */
-  color: white; /* Text color */
-  font-size: 16px; /* Font size */
-  font-weight: 600; /* Bold text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin-right: 1rem;
-}
-
-button:hover {
-  background: linear-gradient(135deg, #5a7cfa, #3b5bdb); /* Darker gradient on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-/* Array Bar States */
-.array-bar.active {
-  background-color: #ff5555; /* Red for active bars */
-}
-
-.array-bar.sorted {
-  background-color: #4caf50; /* Green for sorted bars */
-}
 /* Extra Small Phone Responsiveness (max-width: 480px) */
 @media (max-width: 480px) {
   /* General Adjustments */
