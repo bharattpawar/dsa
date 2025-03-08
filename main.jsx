@@ -16,7 +16,7 @@ import DebuggingChallenge from "./components/DebuggingChallenge/DebuggingChallen
 import ContactUs from "./components/ContactUs/ContactUs";
 import WhatWeOffer from "./components/WhatWeOffer/WhatWeOffer";
 import GetStarted from "./components/GetStarted/GetStarted";
-import Homepages from "./components/Homepages/HomePages";
+import Homepages from "./components/Homepages/HomePages.jsx";
 import Navbar from "./components/Navbar/Navbar"; // Import Navbar Component
 import "./style.css"; 
 
